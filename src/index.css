@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_opsz_wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-optical-sizing: auto;
+}
+
 :root {
   --font-family: 'Inter', sans-serif;
   line-height: 1.5;
@@ -13,14 +20,61 @@
   --button: #e44848;
   --button-hover: #d84343;
   --rating: #ffc531;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#root {
-  max-width: 1440px;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-family);
   line-height: 1.5;
+  margin: 0;
+  max-width: 1440px;
+  width: 100%;
+}
+
+/* ===== RESET ===== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+svg {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
 }

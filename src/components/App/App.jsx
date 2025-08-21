@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
-import s from './App.module.css';
-import Layout from '../Layout';
-import Home from '../../pages/Home';
-import Catalog from '../../pages/Catalog';
-import CamperDetails from '../../pages/CamperDetails';
+import Layout from '../Layout/Layout';
+import Home from '../../pages/Home/Home';
+import Catalog from '../../pages/Catalog/Catalog';
+import CamperDetails from '../../pages/CamperDetails/CamperDetails';
+import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
         <Route path='/catalog' element={<Catalog />} />
         <Route path='/catalog/:id' element={<CamperDetails />} />
       </Route>
+      <Route path='*' element={<NotFoundPage />} />
     </Routes>
   );
 };

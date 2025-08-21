@@ -1,0 +1,56 @@
+.header {
+  background-color: var(--inputs);
+}
+
+.container {
+  border-bottom: 1px solid var(--badges);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* gap: 450px; */
+  padding: 24px 64px;
+  position: relative;
+}
+
+.logoContainer {
+  position: absolute;
+  left: 64px;
+}
+
+.logo {
+  height: 15px;
+  max-width: 136px;
+}
+
+.navigation {
+  align-items: center;
+  display: inline-flex;
+  gap: 32px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
+}
+
+.navItem {
+  color: var(--main);
+  font-family: var(--body-2-font-family);
+  font-size: var(--body-2-font-size);
+  font-style: var(--body-2-font-style);
+  font-weight: var(--body-2-font-weight);
+  letter-spacing: var(--body-2-letter-spacing);
+  line-height: var(--body-2-line-height);
+  margin-top: -1px;
+  /* position: relative; */
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.active {
+  color: var(--button-hover);
+}
