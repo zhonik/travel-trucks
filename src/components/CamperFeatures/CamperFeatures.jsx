@@ -33,20 +33,20 @@ const CamperFeatures = () => {
       <ul className={s.equipmentList}>
         <li className={s.equipmentItem}>
           <svg className={s.equipmentIcon} width={20} height={20}>
-            <use href='/src/assets/icons.svg#icon-diagram'></use>
+            <use href='../../assets/icons.svg#icon-diagram'></use>
           </svg>
           {transmission === 'automatic' ? 'Automatic' : 'Manual'}
         </li>
         <li className={s.equipmentItem}>
           <svg className={s.equipmentIcon} width={20} height={20}>
-            <use href='/src/assets/icons.svg#icon-fuel-pump'></use>
+            <use href='../../assets/icons.svg#icon-fuel-pump'></use>
           </svg>
           {capitalize(engine)}
         </li>
         {AC && (
           <li className={s.equipmentItem}>
             <svg className={s.equipmentIcon} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-wind'></use>
+              <use href='../../assets/icons.svg#icon-wind'></use>
             </svg>
             AC
           </li>
@@ -54,7 +54,7 @@ const CamperFeatures = () => {
         {TV && (
           <li className={s.equipmentItem}>
             <svg className={s.equipmentIcon} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-tv'></use>
+              <use href='../../assets/icons.svg#icon-tv'></use>
             </svg>
             TV
           </li>
@@ -62,7 +62,7 @@ const CamperFeatures = () => {
         {bathroom && (
           <li className={s.equipmentItem}>
             <svg className={s.equipmentIcon} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-shower'></use>
+              <use href='../../assets/icons.svg#icon-shower'></use>
             </svg>
             Bathroom
           </li>
@@ -71,7 +71,7 @@ const CamperFeatures = () => {
         {refrigerator && (
           <li className={s.equipmentItem}>
             <svg className={s.equipmentIcon} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-fridge-outline'></use>
+              <use href='../../assets/icons.svg#icon-fridge-outline'></use>
             </svg>
             Refrigerator
           </li>
@@ -79,7 +79,7 @@ const CamperFeatures = () => {
         {microwave && (
           <li className={s.equipmentItem}>
             <svg className={clsx(s.equipmentIcon, s.clearFill)} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-microwave'></use>
+              <use href='../../assets/icons.svg#icon-microwave'></use>
             </svg>
             Microwave
           </li>
@@ -87,7 +87,7 @@ const CamperFeatures = () => {
         {kitchen && (
           <li className={s.equipmentItem}>
             <svg className={s.equipmentIcon} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-cup-hot'></use>
+              <use href='../../assets/icons.svg#icon-cup-hot'></use>
             </svg>
             Kitchen
           </li>
@@ -95,7 +95,7 @@ const CamperFeatures = () => {
         {water && (
           <li className={s.equipmentItem}>
             <svg className={clsx(s.equipmentIcon, s.clearFill)} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-water-outline'></use>
+              <use href='../../assets/icons.svg#icon-water-outline'></use>
             </svg>
             Water
           </li>
@@ -103,7 +103,7 @@ const CamperFeatures = () => {
         {radio && (
           <li className={s.equipmentItem}>
             <svg className={s.equipmentIcon} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-radios'></use>
+              <use href='../../assets/icons.svg#icon-radios'></use>
             </svg>
             Radio
           </li>
@@ -111,7 +111,7 @@ const CamperFeatures = () => {
         {gas && (
           <li className={s.equipmentItem}>
             <svg className={clsx(s.equipmentIcon, s.clearFill)} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-gas-stove'></use>
+              <use href='../../assets/icons.svg#icon-gas-stove'></use>
             </svg>
             Gas
           </li>

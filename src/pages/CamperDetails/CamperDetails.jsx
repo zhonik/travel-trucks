@@ -69,13 +69,13 @@ const CamperDetails = () => {
                         width={16}
                         height={16}
                       >
-                        <use href='/src/assets/icons.svg#icon-star-yellow'></use>
+                        <use href='../../assets/icons.svg#icon-star-yellow'></use>
                       </svg>
                       {rating} ({reviews.length} Reviews)
                     </p>
                     <p className={s.location}>
                       <svg className={s.equipmentIcon} width={20} height={20}>
-                        <use href='/src/assets/icons.svg#icon-map'></use>
+                        <use href='../../assets/icons.svg#icon-map'></use>
                       </svg>
                       {location && formattedLocation(location)}
                     </p>

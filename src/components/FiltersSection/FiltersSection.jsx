@@ -64,7 +64,7 @@ const FiltersSection = ({ onSearch }) => {
               onChange={e => setLocation(e.target.value)}
             />
             <svg className={clsx(s.locationIcon)} width={20} height={20}>
-              <use href='/src/assets/icons.svg#icon-map'></use>
+              <use href='../../assets/icons.svg#icon-map'></use>
             </svg>
           </div>
         </div>
@@ -100,7 +100,7 @@ const FiltersSection = ({ onSearch }) => {
                       width={32}
                       height={32}
                     >
-                      <use href={`/src/assets/icons.svg#${icon}`} />
+                      <use href={`../../assets/icons.svg#${icon}`} />
                     </svg>
                     {label}
                   </span>
@@ -121,7 +121,7 @@ const FiltersSection = ({ onSearch }) => {
                   />
                   <span className={s.equipmentGroup}>
                     <svg className={s.equipmentIcon} width={32} height={32}>
-                      <use href={`/src/assets/icons.svg#${icon}`} />
+                      <use href={`../../assets/icons.svg#${icon}`} />
                     </svg>
                     {label}
                   </span>
@@ -154,7 +154,7 @@ const FiltersSection = ({ onSearch }) => {
                   />
                   <span className={s.equipmentGroup}>
                     <svg className={s.equipmentIcon} width={32} height={32}>
-                      <use href={`/src/assets/icons.svg#${icon}`} />
+                      <use href={`../../assets/icons.svg#${icon}`} />
                     </svg>
                     {label}
                   </span>
