@@ -18,7 +18,7 @@ const CamperReviews = () => {
         fill={index < rating ? '#ffc531' : '#f2f4f7'}
         className={s.star}
       >
-        <use href='../../assets/icons.svg#icon-star-yellow'></use>
+        <use href='/icons.svg#icon-star-yellow'></use>
       </svg>
     ));
   };

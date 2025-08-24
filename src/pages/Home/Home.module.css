@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: url(../../assets/images/hero.webp);
+  background-image: url(/images/hero.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
 @media (min-resolution: 192dpi) {
   .wrapper {
-    background-image: url('../../assets/images/hero@2x.webp');
+    background-image: url('/images/hero@2x.webp');
   }
 }
 

@@ -11,7 +11,7 @@ const Header = () => {
     <header className={s.header}>
       <nav className={s.container}>
         <Link className={s.logoContainer} to='/'>
-          <img className={s.logo} alt='Logo' src='../../assets/logo.svg' />
+          <img className={s.logo} alt='Logo' src='/logo.svg' />
         </Link>
 
         <div className={s.navigation}>

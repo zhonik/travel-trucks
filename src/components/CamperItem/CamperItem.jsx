@@ -47,7 +47,7 @@ const CamperItem = ({ camper }) => {
                   <span className={s.price}>€{formatPrice(price)}</span>
                   <button className={s.favoriteBtn} type='button'>
                     <svg className={s.favoriteIcon} width={24} height={21}>
-                      <use href='../../assets/icons.svg#icon-heart-default'></use>
+                      <use href='/icons.svg#icon-heart-default'></use>
                     </svg>
                   </button>
                 </div>
@@ -59,13 +59,13 @@ const CamperItem = ({ camper }) => {
                     width={16}
                     height={16}
                   >
-                    <use href='../../assets/icons.svg#icon-star-yellow'></use>
+                    <use href='/icons.svg#icon-star-yellow'></use>
                   </svg>
                   {rating} ({reviews.length} Reviews)
                 </p>
                 <p className={s.location}>
                   <svg className={s.equipmentIcon} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-map'></use>
+                    <use href='/icons.svg#icon-map'></use>
                   </svg>
                   {formattedLocation(location)}
                 </p>
@@ -77,7 +77,7 @@ const CamperItem = ({ camper }) => {
               {AC && (
                 <li className={s.equipmentItem}>
                   <svg className={s.equipmentIcon} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-wind'></use>
+                    <use href='/icons.svg#icon-wind'></use>
                   </svg>
                   AC
                 </li>
@@ -85,21 +85,21 @@ const CamperItem = ({ camper }) => {
 
               <li className={s.equipmentItem}>
                 <svg className={s.equipmentIcon} width={20} height={20}>
-                  <use href='../../assets/icons.svg#icon-diagram'></use>
+                  <use href='/icons.svg#icon-diagram'></use>
                 </svg>
                 {transmission === 'automatic' ? 'Automatic' : 'Manual'}
               </li>
 
               <li className={s.equipmentItem}>
                 <svg className={s.equipmentIcon} width={20} height={20}>
-                  <use href='../../assets/icons.svg#icon-fuel-pump'></use>
+                  <use href='/icons.svg#icon-fuel-pump'></use>
                 </svg>
                 {capitalize(engine)}
               </li>
               {kitchen && (
                 <li className={s.equipmentItem}>
                   <svg className={s.equipmentIcon} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-cup-hot'></use>
+                    <use href='/icons.svg#icon-cup-hot'></use>
                   </svg>
                   Kitchen
                 </li>
@@ -107,7 +107,7 @@ const CamperItem = ({ camper }) => {
               {TV && (
                 <li className={s.equipmentItem}>
                   <svg className={s.equipmentIcon} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-tv'></use>
+                    <use href='/icons.svg#icon-tv'></use>
                   </svg>
                   TV
                 </li>
@@ -115,7 +115,7 @@ const CamperItem = ({ camper }) => {
               {bathroom && (
                 <li className={s.equipmentItem}>
                   <svg className={s.equipmentIcon} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-shower'></use>
+                    <use href='/icons.svg#icon-shower'></use>
                   </svg>
                   Bathroom
                 </li>
@@ -123,7 +123,7 @@ const CamperItem = ({ camper }) => {
               {microwave && (
                 <li className={s.equipmentItem}>
                   <svg className={clsx(s.equipmentIcon, s.clearFill)} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-microwave'></use>
+                    <use href='/icons.svg#icon-microwave'></use>
                   </svg>
                   Microwave
                 </li>
@@ -131,7 +131,7 @@ const CamperItem = ({ camper }) => {
               {gas && (
                 <li className={s.equipmentItem}>
                   <svg className={clsx(s.equipmentIcon, s.clearFill)} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-gas-stove'></use>
+                    <use href='/icons.svg#icon-gas-stove'></use>
                   </svg>
                   Gas
                 </li>
@@ -139,7 +139,7 @@ const CamperItem = ({ camper }) => {
               {water && (
                 <li className={s.equipmentItem}>
                   <svg className={clsx(s.equipmentIcon, s.clearFill)} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-water-outline'></use>
+                    <use href='/icons.svg#icon-water-outline'></use>
                   </svg>
                   Water
                 </li>
@@ -147,7 +147,7 @@ const CamperItem = ({ camper }) => {
               {radio && (
                 <li className={s.equipmentItem}>
                   <svg className={s.equipmentIcon} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-radios'></use>
+                    <use href='/icons.svg#icon-radios'></use>
                   </svg>
                   Radio
                 </li>
@@ -155,7 +155,7 @@ const CamperItem = ({ camper }) => {
               {refrigerator && (
                 <li className={s.equipmentItem}>
                   <svg className={s.equipmentIcon} width={20} height={20}>
-                    <use href='../../assets/icons.svg#icon-fridge-outline'></use>
+                    <use href='/icons.svg#icon-fridge-outline'></use>
                   </svg>
                   Refrigerator
                 </li>
