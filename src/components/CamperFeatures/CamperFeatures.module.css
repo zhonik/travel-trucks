@@ -1,0 +1,91 @@
+.featuresContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 10px;
+  padding: 44px 80px;
+  max-width: 631px;
+  height: 588px;
+
+  background: var(--inputs);
+}
+
+.equipmentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.equipmentItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 100px;
+  padding: 12px 18px;
+  width: fit-content;
+
+  background-color: var(--badges);
+  mix-blend-mode: multiply;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
+}
+
+.equipmentIcon {
+  stroke: none;
+  fill: var(--main);
+
+  &.clearFill {
+    stroke: var(--main);
+    fill: none;
+  }
+}
+
+.detailsContainer {
+  width: 100%;
+  height: auto;
+}
+
+.detailsTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+
+  margin-bottom: 24px;
+}
+
+.stroke {
+  height: 1px;
+  background-color: var(--gray-light);
+
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detailsItem {
+  display: flex;
+  justify-content: space-between;
+}
+.detailsItem p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
+}

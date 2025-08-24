@@ -1,0 +1,191 @@
+.content {
+  border: 1px solid var(--gray-light);
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 888px;
+  min-height: 368px;
+
+  background-color: var(--white);
+}
+
+.card {
+  display: flex;
+  gap: 24px;
+}
+
+.cardImage {
+  border-radius: 10px;
+  width: 292px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  max-width: 525px;
+  min-width: 0;
+}
+
+.cardHeaderWrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.camperName {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+
+.priceAndFavoriteWrapp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+
+.favoriteBtn {
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+}
+
+.favoriteIcon {
+  stroke: none;
+  fill: var(--main);
+}
+
+.reviewsAndLocationWrapp {
+  display: flex;
+  gap: 16px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
+  text-decoration: underline;
+}
+
+.location {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reviewsIcon {
+  fill: var(--rating);
+}
+
+.reviewsIconDefault {
+  fill: var(--badges);
+}
+
+.description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-width: 525px;
+  width: 100%;
+  min-width: 0;
+}
+
+.equipmentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.equipmentItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 100px;
+  padding: 12px 18px;
+  width: fit-content;
+
+  background-color: var(--badges);
+  mix-blend-mode: multiply;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
+}
+
+.equipmentIcon {
+  stroke: none;
+  fill: var(--main);
+
+  &.clearFill {
+    stroke: var(--main);
+    fill: none;
+  }
+}
+
+.button {
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: fit-content;
+  height: 56px;
+
+  background-color: var(--button);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--white);
+
+  transition: background-color var(--transition);
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+}

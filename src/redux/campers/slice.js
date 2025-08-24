@@ -3,7 +3,10 @@ import { fetchCamperById, fetchCampers } from './operations';
 
 const initialState = {
   items: [],
-  camper: null,
+  camper: {},
+  page: 1,
+  limit: 4,
+  total: 0,
   isLoading: false,
   error: null,
 };
@@ -20,11 +23,14 @@ const handleRejected = (state, action) => {
 
 const slice = createSlice({
   name: 'campers',
-
   initialState,
   reducers: {
     clearCampers: state => {
       state.items = [];
+      state.page = 1;
+      state.total = 0;
+      state.error = null;
+      state.isLoading = false;
     },
   },
 
@@ -34,7 +40,18 @@ const slice = createSlice({
       .addCase(fetchCampers.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.items = action.payload;
+
+        const { items, total, page, limit } = action.payload;
+
+        if (page === 1) {
+          state.items = items;
+        } else {
+          state.items = [...state.items, ...items];
+        }
+
+        state.page = page;
+        state.limit = limit;
+        state.total = total;
       })
       .addCase(fetchCampers.rejected, handleRejected)
       .addCase(fetchCamperById.pending, handlePending)

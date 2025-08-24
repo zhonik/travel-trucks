@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import s from './Home.module.css';
 
 const Home = () => {
@@ -10,7 +11,9 @@ const Home = () => {
           <p className={s.subtitle}>You can find everything you want in our catalog</p>
         </div>
 
-        <button type='button'>View Now</button>
+        <Link to={'/catalog'} className={s.button}>
+          View Now
+        </Link>
       </div>
     </div>
   );

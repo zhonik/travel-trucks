@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('./assets/fonts/Inter-VariableFont_opsz_wght.ttf') format('truetype');
-  font-weight: 400 700;
+  font-weight: 100 900;
   font-optical-sizing: auto;
 }
 
@@ -63,6 +63,7 @@ a {
 button {
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 svg {

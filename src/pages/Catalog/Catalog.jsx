@@ -1,19 +1,57 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectError, selectIsLoading } from '../../redux/campers/selectors';
-import { useEffect } from 'react';
-import { fetchCampers } from '../../redux/campers/operations';
 import CampersList from '../../components/CampersList/CampersList';
+import FiltersSection from '../../components/FiltersSection/FiltersSection';
+import s from './Catalog.module.css';
+import { selectFilters } from '../../redux/filters/selectors';
+import { selectCampers } from '../../redux/campers/selectors';
+import { useEffect } from 'react';
+import { clearCampers } from '../../redux/campers/slice';
+import { fetchCampers } from '../../redux/campers/operations';
+import Button from '../../components/Button/Button';
+import Loader from '../../components/Loader/Loader';
+import { useSearchParams } from 'react-router-dom';
 
 const Catalog = () => {
   const dispatch = useDispatch();
-  const loading = useSelector(selectIsLoading);
-  const error = useSelector(selectError);
+  const [searchParams] = useSearchParams();
+  const filters = useSelector(selectFilters);
+  const { items, page, limit, total, isLoading, error } = useSelector(selectCampers);
+  const hasMore = items.length < total;
 
   useEffect(() => {
-    dispatch(fetchCampers());
-  }, [dispatch]);
+    const filters = {
+      location: searchParams.get('location') || '',
+      form: searchParams.get('form') || '',
+      transmission: searchParams.get('transmission') || '',
+      features: searchParams.getAll('features'),
+    };
+    dispatch(fetchCampers({ filters, page: 1, limit }));
+  }, [dispatch, limit, searchParams]);
 
-  return <>{!loading && !error && <CampersList />}</>;
+  const handleLoadMore = () => {
+    dispatch(fetchCampers({ filters, page: page + 1, limit }));
+  };
+
+  const handleSearch = filters => {
+    dispatch(clearCampers());
+    dispatch(fetchCampers({ filters, page: 1, limit }));
+  };
+
+  return (
+    <div className={s.container}>
+      {isLoading && <Loader />}
+      <FiltersSection onSearch={handleSearch} />
+
+      {items.length ? (
+        <div className={s.camperListWrapp}>
+          {!isLoading && !error && <CampersList />}
+          {hasMore && !isLoading && <Button isLoading={isLoading} onClick={handleLoadMore} />}
+        </div>
+      ) : (
+        !isLoading && <div className={s.noCamper}>No campers found</div>
+      )}
+    </div>
+  );
 };
 
 export default Catalog;
