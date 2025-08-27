@@ -1,10 +1,10 @@
 import { NavLink, Outlet, useParams } from 'react-router-dom';
-import s from './CamperDetails.module.css';
+import s from './CamperDetailsPage.module.css';
 import clsx from 'clsx';
 import FormBooking from '../../components/FormBooking/FormBooking';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectCamper, selectError, selectIsLoading } from '../../redux/campers/selectors';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { fetchCamperById } from '../../redux/campers/operations';
 import { formatPrice } from '../../helpers/formatPrice';
 import { formattedLocation } from '../../helpers/formattedLocation';
@@ -121,7 +121,9 @@ const CamperDetails = () => {
 
           <div className={s.outletAndBookingWrapp}>
             <div className={s.sub}>
-              <Outlet />
+              <Suspense>
+                <Outlet />
+              </Suspense>
             </div>
 
             <div className={s.sub}>

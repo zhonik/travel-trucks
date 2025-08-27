@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import CampersList from '../../components/CampersList/CampersList';
 import FiltersSection from '../../components/FiltersSection/FiltersSection';
-import s from './Catalog.module.css';
+import s from './CatalogPage.module.css';
 import { selectFilters } from '../../redux/filters/selectors';
 import { selectCampers } from '../../redux/campers/selectors';
 import { useEffect } from 'react';
