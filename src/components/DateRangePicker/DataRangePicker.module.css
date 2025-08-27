@@ -1,0 +1,131 @@
+.dateInputWrapper {
+  width: 100%;
+}
+
+.dateInputWrapper .react-datepicker-wrapper,
+.dateInputWrapper .react-datepicker__input-container input {
+  width: 100% !important;
+  border-radius: 12px !important;
+  background: var(--Inputs) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.dateInputWrapper .react-datepicker {
+  border: 1px solid var(--Main, #101828) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  font-family: inherit !important;
+  color: var(--Main, #101828) !important;
+}
+
+.dateInputWrapper .react-datepicker__triangle {
+  fill: white !important;
+  stroke: var(--Main, #101828) !important;
+  stroke-width: 1px !important;
+}
+
+.dateInputWrapper .react-datepicker__header {
+  background: white !important;
+  border-bottom: none !important;
+  padding: 8px 0 !important;
+  border-radius: 20px;
+}
+
+.dateInputWrapper .react-datepicker__current-month {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: var(--Main, #101828) !important;
+}
+
+.dateInputWrapper .react-datepicker__day-names {
+  border-bottom: 1px solid var(--Main, #101828) !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+.dateInputWrapper .react-datepicker__day-name {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: var(--Text, #475467) !important;
+  text-transform: uppercase !important;
+}
+
+.dateInputWrapper .react-datepicker__month {
+  display: grid !important;
+  grid-template-rows: repeat(5, 1fr) !important;
+}
+
+.dateInputWrapper .react-datepicker__day,
+.dateInputWrapper .react-datepicker__month-text,
+.dateInputWrapper .react-datepicker__quarter-text,
+.dateInputWrapper .react-datepicker__year-text {
+  border-radius: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  margin: 2px !important;
+  font-size: 14px !important;
+  color: var(--Main, #101828) !important;
+}
+
+.dateInputWrapper .react-datepicker__day:hover,
+.dateInputWrapper .react-datepicker__month-text:hover,
+.dateInputWrapper .react-datepicker__quarter-text:hover,
+.dateInputWrapper .react-datepicker__year-text:hover,
+.dateInputWrapper .react-datepicker__day--selected,
+.dateInputWrapper .react-datepicker__day--in-range,
+.dateInputWrapper .react-datepicker__day--range-start,
+.dateInputWrapper .react-datepicker__day--range-end,
+.dateInputWrapper .react-datepicker__month-text--selected,
+.dateInputWrapper .react-datepicker__month-text--in-range,
+.dateInputWrapper .react-datepicker__month-text--range-start,
+.dateInputWrapper .react-datepicker__month-text--range-end,
+.dateInputWrapper .react-datepicker__quarter-text--selected,
+.dateInputWrapper .react-datepicker__quarter-text--in-range,
+.dateInputWrapper .react-datepicker__quarter-text--range-start,
+.dateInputWrapper .react-datepicker__quarter-text--range-end,
+.dateInputWrapper .react-datepicker__year-text--selected,
+.dateInputWrapper .react-datepicker__year-text--in-range,
+.dateInputWrapper .react-datepicker__year-text--range-start,
+.dateInputWrapper .react-datepicker__year-text--range-end,
+.dateInputWrapper .react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range),
+.dateInputWrapper
+  .react-datepicker__month-text--in-selecting-range:not(.react-datepicker__month-text--in-range),
+.dateInputWrapper
+  .react-datepicker__quarter-text--in-selecting-range:not(
+    .react-datepicker__quarter-text--in-range
+  ),
+.dateInputWrapper
+  .react-datepicker__year-text--in-selecting-range:not(.react-datepicker__year-text--in-range),
+.dateInputWrapper .react-datepicker__day--selecting-range,
+.dateInputWrapper .react-datepicker__month-text--selecting-range,
+.dateInputWrapper .react-datepicker__quarter-text--selecting-range,
+.dateInputWrapper .react-datepicker__year-text--selecting-range,
+.dateInputWrapper .react-datepicker__day--keyboard-selected,
+.dateInputWrapper .react-datepicker__month-text--keyboard-selected,
+.dateInputWrapper .react-datepicker__quarter-text--keyboard-selected,
+.dateInputWrapper .react-datepicker__year-text--keyboard-selected {
+  background: var(--Text, #475467) !important;
+  color: #fff !important;
+}
+
+.dateInputWrapper .react-datepicker__navigation-icon::before,
+.dateInputWrapper .react-datepicker__year-read-view--down-arrow,
+.dateInputWrapper .react-datepicker__month-read-view--down-arrow,
+.dateInputWrapper .react-datepicker__month-year-read-view--down-arrow {
+  border-color: var(--Main, #101828);
+  top: 6px !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.dateInputWrapper .react-datepicker__day--today {
+  font-weight: 600 !important;
+  color: #fff !important;
+}
+
+.dateInputWrapper .react-datepicker__navigation--previous::before,
+.dateInputWrapper .react-datepicker__navigation--next::before {
+  border-color: var(--Main, #101828) !important;
+}

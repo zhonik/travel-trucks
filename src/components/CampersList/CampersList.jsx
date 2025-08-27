@@ -7,11 +7,9 @@ const CampersList = () => {
   const items = useSelector(selectItems);
 
   return (
-    <div className={s.wrapper}>
-      <ul className={s.campersList}>
-        {items.length && items.map(camper => <CamperItem key={camper.id} camper={camper} />)}
-      </ul>
-    </div>
+    <ul className={s.campersList}>
+      {items.length && items.map(camper => <CamperItem key={camper.id} camper={camper} />)}
+    </ul>
   );
 };
 
