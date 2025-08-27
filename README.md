@@ -86,19 +86,19 @@ http://localhost:5173
 ---
 
 ## 💡 Implementation Highlights
-•	Reusable Components: All major UI parts (buttons, cards, filters) are reusable for easier scalability.
-•	Redux State Management: Persisted Redux store to save user preferences.
-•	Dynamic Routing: React Router v6 with nested routes for Camper Details and Reviews.
-•	Booking Form Validation: User inputs validated before submission.
+- Reusable Components: All major UI parts (buttons, cards, filters) are reusable for easier scalability.
+- Redux State Management: Persisted Redux store to save user preferences.
+- Dynamic Routing: React Router v6 with nested routes for Camper Details and Reviews.
+- Booking Form Validation: User inputs validated before submission.
 
 ---
 	
 ## 🔮 Future Improvements
-•	Add user authentication for saved bookings and personal profiles.
-•	Implement backend integration for live camper availability and booking confirmations.
-•	Enhance reviews system with ratings and image uploads.
-•	Add advanced filters (price range, amenities).
-•	Include payment gateway integration for seamless online booking.
+- Add user authentication for saved bookings and personal profiles.
+- Implement backend integration for live camper availability and booking confirmations.
+- Enhance reviews system with ratings and image uploads.
+- Add advanced filters (price range, amenities).
+- Include payment gateway integration for seamless online booking.
 
 ---
 
