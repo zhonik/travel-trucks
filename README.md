@@ -44,15 +44,16 @@
 ---
 
 ## 🗂 Project Structure
-public/            # Images and other resources
+
+public/ # Images and other resources
 src/
-├─ components/     # React components
-├─ helpers/        # Support functions 
-├─ pages/          # Pages (HomePage, CatalogPage, CamperDetailsPage, NotFoundPage)
-├─ redux/          # Redux store and slices      
-├─ services/       # API settings    
-├─ App.jsx         # Main component
-└─ main.jsx        # Entry point
+├─ components/ # React components
+├─ helpers/ # Support functions
+├─ pages/ # Pages (HomePage, CatalogPage, CamperDetailsPage, NotFoundPage)
+├─ redux/ # Redux store and slices
+├─ services/ # API settings
+├─ App.jsx # Main component
+└─ main.jsx  # Entry point
 
 ---
 
