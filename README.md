@@ -1,11 +1,11 @@
-# 🚐 Travel Tracks
+# 🚐 Travel Trucks
 
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white)](https://redux.js.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-**Travel Tracks** is a web application for renting campers in Ukraine. Users can browse available campers, view details, and make online bookings.
+**Travel Trucks** is a web application for renting campers in Ukraine. Users can browse available campers, view details, and make online bookings.
 
 ---
 
@@ -108,7 +108,7 @@ This project is licensed under the [MIT License](https://github.com/zhonik/trave
 
 ---
 
-## 📬 Contact
+## 📬 Connect with Me
 
-•	Email: zhonik92@gmail.com
-•	GitHub: github.com/zhonik
+- Email: zhonik92@gmail.com
+- GitHub: github.com/zhonik

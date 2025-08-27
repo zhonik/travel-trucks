@@ -72,6 +72,10 @@
   fill: var(--main);
 }
 
+.favoriteIconActive {
+  fill: var(--button);
+}
+
 .reviewsAndLocationWrapp {
   display: flex;
   gap: 16px;

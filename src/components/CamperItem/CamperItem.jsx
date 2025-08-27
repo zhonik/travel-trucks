@@ -4,8 +4,14 @@ import { Link } from 'react-router-dom';
 import { formatPrice } from '../../helpers/formatPrice';
 import { capitalize } from '../../helpers/capitalize';
 import { formattedLocation } from '../../helpers/formattedLocation';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectFavorites } from '../../redux/favorites/selectors';
+import { toggleFavorites } from '../../redux/favorites/slice';
 
 const CamperItem = ({ camper }) => {
+  const dispatch = useDispatch();
+  const favorites = useSelector(selectFavorites);
+
   const {
     id,
     AC,
@@ -28,6 +34,8 @@ const CamperItem = ({ camper }) => {
     water,
   } = camper;
 
+  const isFavorite = favorites.includes(id);
+
   return (
     <li>
       <div className={s.content}>
@@ -45,8 +53,16 @@ const CamperItem = ({ camper }) => {
                 <h2 className={s.camperName}>{name}</h2>
                 <div className={s.priceAndFavoriteWrapp}>
                   <span className={s.price}>€{formatPrice(price)}</span>
-                  <button className={s.favoriteBtn} type='button'>
-                    <svg className={s.favoriteIcon} width={24} height={21}>
+                  <button
+                    className={s.favoriteBtn}
+                    type='button'
+                    onClick={() => dispatch(toggleFavorites(id))}
+                  >
+                    <svg
+                      className={clsx(s.favoriteIcon, isFavorite && s.favoriteIconActive)}
+                      width={24}
+                      height={21}
+                    >
                       <use href='/icons.svg#icon-heart-default'></use>
                     </svg>
                   </button>

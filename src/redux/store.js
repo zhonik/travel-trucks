@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import campersReducer from './campers/slice.js';
 import filterReducer from './filters/slice.js';
+import favoritesReduser from './favorites/slice.js';
 import storage from 'redux-persist/lib/storage';
 import {
   FLUSH,
@@ -16,12 +17,13 @@ import {
 const rootReduser = combineReducers({
   campers: campersReducer,
   filters: filterReducer,
+  favorites: favoritesReduser,
 });
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['campers'],
+  whitelist: ['favorites'],
 };
 
 const persistedReduser = persistReducer(persistConfig, rootReduser);
